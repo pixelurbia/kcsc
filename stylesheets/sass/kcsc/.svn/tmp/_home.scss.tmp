@@ -1,0 +1,489 @@
+.home .drop {
+	top:0px!important;
+}
+
+.drop {
+	top:70px;
+	position: relative;
+
+}
+
+.line {
+	background:#e1e1e1;
+	height: 3px;
+	margin-top: 70px;
+}
+
+.hero {
+	top:50px;
+	width:100%;
+	position: relative;
+	padding-bottom: 80px;
+
+	@include media ($mobile) {
+	height: 350px;
+}
+	h1 {
+		font-size:99px;
+		text-transform: uppercase;
+		padding:10px 45px;
+		line-height: 98px;
+	@include media ($mobile){
+		font-size: 36px;
+		line-height: 38px;
+		padding:10px 20px;
+	}
+
+	}
+	.play {
+		@include main;
+		color:$blue;
+		font-size: 18px;
+		background:url(../images/play.svg)no-repeat left center;
+		padding:0px 40px;
+		display: inline-block;
+		background-size: 28px;
+		float: left;
+		width:100%;
+	}
+}
+
+
+
+.twitter-alert {
+	background:url(../images/blue-lines.svg)no-repeat $yellow;
+	padding:20px 80px;
+	width:100%;
+	display: inline-block;
+	background-size: 30px;
+	background-position: -2px 91%;
+
+	@include media ($ipad) {
+		text-align: center;
+	}
+
+	@include media ($mobile){
+		padding:20px 20px;
+	}
+
+	img {
+		float: left;
+		width:100%;
+
+		@include media ($mobile){
+			width:25%;
+			margin-left: 0px;
+			float: none;
+		}
+	}
+
+	h2 {
+		float: left;
+		padding:20px 40px;
+		display: inline-block;
+	}
+
+	.twit-contain {
+		float: left;
+		width:8%;
+		margin-left: 40px;
+<<<<<<< .mine
+		@include media ($ipad){margin-left:0px; margin:0 auto; }
+		@include media ($mobile){ margin-left:0px; margin:0 auto;}
+=======
+
+		@include media ($mobile){
+			width:100%;
+		}
+>>>>>>> .r22
+	}
+
+	.btn.twitter {
+		background-image:url(../images/twitter-blue.svg)!important;
+		background-color: $yellow;	
+		background-repeat:no-repeat;
+		float: right;
+			margin:15px 50px!important;
+
+			@include media ($ipad){
+				background-position: left center;
+				margin:0px!important;
+				float: none;
+			}
+		p {
+			color:$blue;
+			display: block!important;
+			border-left: 1px solid $blue;
+		}
+	}
+
+}
+
+.welcome {
+	text-align: center;
+	width:100%;
+	background:white;
+	padding:50px 0px;
+	
+	display: inline-block;
+
+	h1 {
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		
+	}
+}
+
+.two {
+	@include span-columns(2);
+	@include media ($mobile) {
+		width:100%;
+		margin-bottom: 40px;
+	}
+
+	img {
+		max-height: 168px;
+	}
+
+	h2 {
+		color:$blue;
+		&:hover {
+			color:$navy;
+		}
+	}
+}
+
+.faq-h {
+	width:100%;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	background:$lgray;
+		padding:50px 35px;
+	@include media ($mobile){
+		padding:50px 10px;
+	}
+
+		h1 {
+			margin-bottom: 48px;
+		}
+
+}
+
+.question {
+	text-align: left;
+	margin-right: 0px;
+	padding:18px 0px;
+	border-top:1px solid #e1e1e1;
+
+	@include media ($mobile){
+		width:100%;
+	}
+	&:nth-child(3n) {
+		margin-right:0;
+	}
+	&:nth-child(6), &:nth-child(7) {
+		border-bottom: 1px solid #e1e1e1;
+	}
+
+
+	p {
+		color:$blue;
+		@include main;
+		font-size: 18px;
+
+		&:before {
+			content:'+';
+			color:$blue;
+			margin-right: 20px;
+		}
+	}
+	.answer {
+		display: none;
+
+		p {
+			display: inline-block;
+			&:before {
+				content:'';
+			}
+		}
+	}
+}
+
+
+.question.half {
+	&:nth-child(2n) {
+		@include span-columns(3);
+		@include media ($mobile) {
+			width:100%;
+		}
+	}
+}
+
+.btn.plus {
+	margin-top: 50px;
+	background-image:url(../images/plus.svg);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 10% center;
+}
+
+.cta {
+	width:100%;
+	float: left;
+}
+
+.navy {
+	background:$navy;
+}
+
+.social-media {
+	width:100%;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+
+	h1 {
+		padding:40px 0px;
+		color: white;
+		margin: 0px;
+	}
+}
+
+.social-follow {
+	background:$lgray;
+	width:100%;
+	position: relative;
+	padding:42px 0px;
+}
+
+.btn.facebook {
+background-image:url(../images/facebook-b.svg);
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: 14% center;
+	margin:0 50px;
+
+	@include media ($ipad){
+		margin:0px 15px;
+	}
+	@include media ($mobile) {
+		padding:30px;
+		background-position: center center;
+		margin:0px 15px;
+	}
+
+	p {
+		@include media ($mobile){
+			display: none;
+		}
+	}
+}
+.btn.twitter {
+background-image:url(../images/twitter-b.svg);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 12% center;
+	margin:0 50px;
+	@include media ($ipad){
+		margin:0px 15px;
+	}
+	@include media ($mobile) {
+		padding:30px;
+		background-position: center center;
+		margin:0px 15px;
+	}
+		p {
+		@include media ($mobile){
+			display: none;
+		}
+	}
+}
+.btn.insta {
+background-image:url(../images/instagram-b.svg);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 12% center;
+	margin:0 50px;
+	@include media ($ipad){
+		margin:0px 15px;
+	}
+	@include media ($mobile) {
+		padding:30px;
+		background-position: center center;
+		margin:0px 15px;
+	}
+		p {
+		@include media ($mobile){
+			display: none;
+		}
+	}
+}
+.btn.vimeo {
+background-image:url(../images/vimeo-b.svg);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 12% center;
+	margin:0 50px;
+@include media ($ipad){
+		margin:0px 15px;
+	}
+	@include media ($mobile) {
+		padding:30px;
+		background-position: center center;
+		margin:0px 15px;
+	}
+		p {
+		@include media ($mobile){
+			display: none;
+
+		}
+	}
+}
+.btn.read {
+	background-image:url(../images/read.svg);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 12% center;
+	margin:0 50px;
+}
+
+.fun-facts {
+	text-align: center;
+	padding:50px 0px 70px 0px;
+	h2 {
+		color:$blue;
+	}
+}
+
+.happenings {
+	text-align: center;
+	padding:51px 0px 200px 0px;
+	background:url(../images/happenings-back.svg)no-repeat $lgray;
+	background-position: center 101%;
+	background-size: 100%;
+	width:100%;
+	display: inline-block;
+
+	@include media ($mobile){
+		background-size: 250%;
+	}
+h1 {
+	padding-bottom: 100px;
+}
+
+}
+
+.blogger {
+	@include span-columns(2.5);
+	display: inline-block!important;
+	float: none!important;
+	text-align: right;
+	margin-bottom: 44px;
+
+	@include media ($ipad){
+		@include span-columns(2.8);
+	}
+
+	@include media ($mobile){
+		width:100%;
+		margin-right: 0px;
+	}
+&:nth-child(3n) {
+	margin-right:0;
+}
+
+a {
+	color:$blue;
+	@include main;
+	font-size: 18px;
+	text-align: right;
+	margin-right: 10px;
+}
+.blog-b {
+	
+	text-align: left;
+
+.date {
+	display: inline-block;
+	background:$blue;
+	color:white;
+	font-size: 24px;
+	@include main;
+	padding:30px 15px;
+	width:18%;
+	float: left;
+	@include media ($ipad){
+		font-size: 18px;
+		width:21%;
+		padding:33px 15px;
+	}
+	
+}
+
+.title {
+width:80%;
+	display: inline-block;
+	background-color: white;
+	box-shadow:4px 2px 20px -3px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 4px 2px 20px -3px rgba(0, 0, 0, 0.13);
+   -webkit-box-shadow: 4px 2px 20px -3px rgba(0, 0, 0, 0.13);
+	@include media ($ipad){
+		width:78%;
+	}
+}
+p {
+	color:$blue;
+	@include main;
+	padding: 20.5px 0px;
+	line-height: 20px;
+	margin-left: 3%;
+}
+}
+}
+.streetcar {
+	position: absolute;
+	width:63%;
+	overflow: hidden;
+	top: 0px;
+	right: 0;
+
+	@include media ($mobile) {
+		width:54%;
+	}
+
+	img {
+		max-height: 440px;
+		@include media ($mobile){
+			max-height: 300px;
+		}
+	}
+}
+
+.streetcar.start {
+	-webkit-animation: mymove 5s 1; /* Chrome, Safari, Opera */ 
+    animation: mymove 5s 1;
+
+    @include media ($mobile) {
+    	-webkit-animation: mobilemove 5s 1; /* Chrome, Safari, Opera */ 
+    animation: mobilemove 5s 1;
+    }
+}
+
+@keyframes mymove {
+    0%   {width:63%;}
+    50% {width:270%; opacity:1; }
+    51% {opacity:0; width:275%;}
+    51.2% {opacity:0; width:5%;}
+    52% {opacity:1;}
+    100% {width:63%;}
+}
+
+@keyframes mobilemove {
+    0%   {width:53%;}
+    50% {width:500%; opacity:1; }
+    51% {opacity:0; width:505%;}
+    51.2% {opacity:0; width:5%;}
+    52% {opacity:1;}
+    100% {width:53%;}
+}

@@ -1,0 +1,45 @@
+
+@mixin color-scheme($text_color:#3d3d3d,$scheme:$scheme){
+
+	@if ($scheme == 'light') {
+		color:$text_color;
+	}
+	@if ($scheme == 'dark') {
+		color:#fff;
+	}
+}
+
+
+/****BUTTONS****/
+
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color:white;
+	background-color: $blue;
+	@include main;
+	border-radius: 5px;
+	padding:10px 20px 10px 54px;
+
+p {
+	color:white;
+	font-size: 18px;
+	@include main;
+	margin:0px;
+	border-left: 1px solid white;
+	line-height:40px;
+	padding-left: 20px;
+}
+
+&:hover {
+		background-color:$navy;
+		color:white;
+		transition: background .15s ease-in-out;
+  		 -moz-transition: background .15s ease-in-out;
+  		 -webkit-transition: background .15s ease-in-out;
+
+	}
+}
+

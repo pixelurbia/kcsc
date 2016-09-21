@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/kcsc/!svn/ver/15/wp-content/themes/kcsc/templates/toa/tests
+END
+ConsumerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/kcsc/!svn/ver/15/wp-content/themes/kcsc/templates/toa/tests/ConsumerTest.php
+END
+bootstrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/kcsc/!svn/ver/15/wp-content/themes/kcsc/templates/toa/tests/bootstrap.php
+END
+video.mp4
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/kcsc/!svn/ver/15/wp-content/themes/kcsc/templates/toa/tests/video.mp4
+END
+TokenTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/kcsc/!svn/ver/15/wp-content/themes/kcsc/templates/toa/tests/TokenTest.php
+END
+TwitterOAuthTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/kcsc/!svn/ver/15/wp-content/themes/kcsc/templates/toa/tests/TwitterOAuthTest.php
+END
+sample_env
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/kcsc/!svn/ver/15/wp-content/themes/kcsc/templates/toa/tests/sample_env
+END
+HmacSha1Test.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/kcsc/!svn/ver/15/wp-content/themes/kcsc/templates/toa/tests/HmacSha1Test.php
+END
+AbstractSignatureMethodTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/kcsc/!svn/ver/15/wp-content/themes/kcsc/templates/toa/tests/AbstractSignatureMethodTest.php
+END
+kitten.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/kcsc/!svn/ver/15/wp-content/themes/kcsc/templates/toa/tests/kitten.jpg
+END

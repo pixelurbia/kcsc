@@ -1,0 +1,592 @@
+.header {
+	width:100%;
+	position: fixed;
+	z-index: 9999;
+	background: white;
+	top: 0px;
+}
+
+.logo-contain {
+@include span-columns(1);
+margin-left: 2.85%;
+margin-right:2.9%;
+padding-top: 13px;
+@include media ($ipad) {
+	width:55%;
+	margin:0;
+}
+@include media ($iphone5) {
+	width:50%;
+	padding-left: 3%;
+}
+.logo {
+	height:52px;
+	@include media ($d1) {
+		width:100%;
+	}
+	@include media ($iphone5){
+		padding:0 5px;
+	}
+}
+}
+.main-m {
+	background:$blue;
+	@include span-columns(4);
+	padding:20px 0px 24px 0px;
+	display: inline-block;
+	text-align: center;
+	margin-right: 0;
+
+	@include media ($ipad){
+		display: none;
+	}
+	ul {
+		padding:0;
+		margin:0;
+		li {
+			list-style:none;
+			float: none;
+			display: inline-block;
+			text-align: center;
+			margin:0px 21px;
+
+			@include media ($d1){
+				margin:0px 5px;
+			}
+			a {
+				color:white;
+				@include main;
+				font-size:18px;
+				letter-spacing: 0.03em;
+
+				&:hover {
+					color:$navy;
+				}
+			}
+		}
+	}
+
+}
+
+.header {
+	.contentwrap {
+		max-width: none;
+	}
+
+
+.search-contain {
+@include span-columns(0.5);
+background:$lgray;
+padding:21px 0px;
+text-align: center;
+margin-right: 0px;
+
+@include media ($ipad){
+	width:15%;
+	padding:21px 0px;
+}
+
+.search-i {
+	height: 22px;
+}
+
+}
+
+.route-container {
+	@include span-columns(1);
+	background-color: $blue;
+	text-align: center;
+	padding:20px 0px 21px 0px;
+	@include media ($ipad) {
+		width:15%;
+		padding:21.5px 0px;
+	}
+	@include media ($mobile){
+		padding:19px 0px;
+	}
+	
+	
+	a,p {
+		color:white;
+		font-size: 18px;
+		@include main;
+		letter-spacing: 0.03em;
+		display: inline-block;
+		margin:0;
+
+		&:hover {
+			color:$navy;
+		}
+		p {
+
+		@include media ($ipad) {
+			display: none;
+		
+		}
+	}
+}
+}
+}
+
+.route-container a:hover > .map-i path {
+	fill:$navy;
+
+}
+
+.footer {
+position: relative;
+width:100%;
+background:url(../images/footer-back.svg)no-repeat  $blue;
+background-size: cover;
+padding:71px 0px 24px 0px;
+background-position: center 90px;
+
+h2 {
+	color:white!important;
+}
+a {
+	color: white;
+	font-size: 18px;
+	@include main;
+	&:hover {
+		color:$navy;
+	}
+	p {
+		color: white;
+	font-size: 18px;
+	@include main;
+	line-height: 20px;
+	margin: 0px;
+	&:hover {
+		color:$navy;
+	}
+	}
+}
+
+.social-i {
+	text-align: center;
+
+.social {
+	height:42px;
+	margin-right: 72px;
+
+	@include media ($tablet){
+		margin-right: 42px;
+	}
+	@include media ($ipad){
+		margin-right: 8%;
+	}
+
+
+
+}
+}
+
+.social:hover path {
+	fill:$lightnavy;
+}
+
+.kcmo {
+	height: 46px;
+	margin-right: 30px;
+
+	@include media ($tablet){
+		height:23px;
+		margin-right: 15px;
+		margin-bottom: 10px;
+	}
+	@include media ($ipad){
+		margin-bottom: 30px;
+		position: relative;
+	}
+
+	@include media ($mobile){
+		height: 30px;
+		margin-right: 15px;
+	}
+}
+.logo-vert {
+	height: 36px;
+	position: relative;
+	top: -5px;
+	margin-right: 20px;
+	@include media ($tablet){
+		height:30px;
+		margin-right: 15px;
+	}
+	@include media ($ipad){
+		margin-bottom: 20px;
+		position: relative;
+	}
+@include media ($mobile){
+	height: 25px;
+	top: 0px;
+	margin-right: 15px;
+}
+
+}
+
+.ridekc {
+	height: 25px;
+	position: relative;
+	top: -12px;
+
+	@include media ($tablet){
+		height:20px;
+	}
+	@include media ($mobile){
+		height: 17px;
+		top: -5px;
+	}
+}
+}
+
+.half {
+	@include span-columns(3);
+
+	@include media ($mobile){
+		width:100%;
+	}
+}
+.logos {
+	width:100%;
+	float: left;
+	margin-top: 30px;
+
+	@include media ($mobile){
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+.right-p {
+	padding-left: 35px;
+
+	@include media ($mobile){
+		padding-left:15px;
+	}
+}
+
+.f-content {
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+
+.f-global {
+	width:100%;
+	position: relative;
+	padding:10px 0px;
+	background:$blue;
+	
+	.main-m {
+		padding-left: 12px;
+		width: 100%;
+		text-align: left;
+		display: block!important;
+
+
+
+		li {
+			margin:0;
+			@include media ($mobile){
+				float: left;
+				width: 100%;
+				margin:5px 0;
+			}
+			&:after {
+				content:'|';
+				color:white;
+				margin:0px 27px;
+
+				@include media ($mobile){
+					content:'';
+					margin:0 20px;
+				}
+			}
+		}
+	}
+}
+
+.f-global .main-m li:last-child:after {
+	content:'';
+}
+
+.mc4wp-form {
+	padding:20px 0px;
+	text-align: center;
+
+	.name, .email {
+		width:100%;
+		border-radius: 5px;
+		padding:10px 0px 45px 10px;
+		border:0px;
+	-moz-box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+   -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+   box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+   font-size: 18px;
+	}
+	.email {
+		margin-top: 30px;
+	}
+	.submit {
+		background:url(../images/checkmark-line.svg)no-repeat $navy;
+		border:0px;
+		color:white;
+		padding:23.5px 40px 23.5px 80px;
+		border-radius:5px;
+		background-size: 40px;
+		background-position: 15% center;
+		font-size: 18px;
+		@include main;
+		margin-top: 30px;
+
+		&:hover {
+			background:url(../images/checkmark-line.svg)no-repeat $lightnavy;
+		background-size: 40px;
+		background-position: 15% center;
+		}
+	}
+}
+
+.half.update {
+	padding:0px 80px;
+	@include media ($tablet){
+		padding:0 30px;
+	}
+	@include media ($mobile){
+		padding:0px 15px;
+	}
+}
+
+::-webkit-input-placeholder {
+  color: #a9a8ab;
+  font-size: 18px;
+  position: relative;
+  @include main;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #a9a8ab;
+  font-size: 18px;
+  position: relative;
+  @include main;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #a9a8ab;
+  font-size: 18px;
+  position: relative;
+  @include main;
+ 
+}
+
+:-ms-input-placeholder {
+  color: #a9a8ab;
+  font-size: 18px;
+  position: relative;
+  @include main;
+}
+
+
+ 
+ :-webkit-input-placeholder { @include main; transition: all 0.2s ease-in-out; position: relative; -webkit-transform: translate3d(0, 0px, 0); color:#a9a8ab!important; font-size:14px; } 
+ ::-webkit-input-placeholder[style*=hidden] { line-height:30px;  transition: all 0.2s ease-in-out; font-size:12px; -webkit-transform: translate3d(0, -20px, 0); opacity: 1; margin-bottom:20px;visibility: visible !important; }
+
+
+
+.mobile-menu {
+	display: none;
+	@include media ($ipad) {
+		display: block;
+		background:$blue;
+		float: left;
+		width:15%;
+		height: 70px;
+	}
+	@include media ($iphone5){
+		width:20%;
+	}
+}
+
+
+/*STYLES FOR MOBILE MENU TO X */
+$button-size : 1.88rem; 
+$transition: .3s; // increase this to see the transformations in slow-motion
+ 
+
+
+.lines-button {
+ width:100%;
+ text-align: center;
+  display: inline-block;
+  transition: .3s;
+  cursor: pointer;
+  user-select: none;
+  float:left;
+  height:24px;
+  display: none;	
+	position: relative;
+	top:20px;
+	left:4%;
+@include media ($ipad){
+	display: block;
+}
+ 
+  &:hover {
+    opacity: 1;
+  }
+ 
+  &:active {
+    transition: 0;
+    background: rgba(0,0,0,.1);
+  }
+}
+
+@mixin line {
+  display: inline-block;
+  width: $button-size;
+  height: $button-size/10;
+  background: white;
+  transition: $transition;
+}
+
+
+.lines {
+   
+  //create middle line
+  @include line;
+  position: relative; 
+  cursor:pointer;
+ 
+  &:before, &:after {
+   
+   @include line;
+    position: absolute;
+      left:0;
+    content: '';
+    transform-origin: $button-size/14 center;
+  }
+  &:before { top: 0.825rem; }
+  &:after { top: -0.825rem; }
+}
+
+
+.lines-button:hover {
+  opacity: 1;
+
+}
+
+.lines-button.x.close .lines{
+     background: transparent;
+ 
+    &:before, &:after{
+      transform-origin: 50% 50%;
+      top:0;
+      width: $button-size;
+    }
+ 
+    // rotate the lines to form the x shape
+    &:before{
+      transform: rotate3d(0,0,1,45deg); 
+      -ms-transform: rotate3d(0,0,1,45deg); 
+      -webkit-transform: rotate3d(0,0,1,45deg); 
+    }
+    &:after{
+      transform: rotate3d(0,0,1,-45deg); 
+       -ms-transform: rotate3d(0,0,1,-45deg); 
+      -webkit-transform: rotate3d(0,0,1,-45deg); 
+    }
+}
+
+.map-i {
+	height: 21px;
+	top: 5px;
+	position: relative;
+
+	@include media ($mobile){
+		height:26px;
+	}
+}
+
+.main-m.full {
+	position: absolute;
+	top: 70px;
+	width:100%;
+	display: block;
+	padding-bottom: 0px;
+	padding-top: 0px;
+
+	ul {
+		padding:0px 40px 0px 30px;
+	}
+li {
+	width:100%;
+	float: left;
+	padding: 20px 0px;
+	border-bottom: 1px solid white;
+
+	&:last-child {
+		border-bottom:0;
+	}
+}
+
+}
+
+#searchform {
+	padding:20px 14.8px;
+	position: absolute;
+	bottom: -103%;
+	background:$lgray;
+	display: none;
+	right: 0;
+	width:20.5%;
+
+	@include media ($tablet) {
+		padding:20px 24.8px;
+		bottom:-118.5%;
+		margin-left: -10%;
+		width:50%;
+	}
+	@include media ($mobile){
+		margin-left: 0px;
+		width:100%;
+		bottom:-120.5%;
+		left: 0;
+	}
+
+	input {
+		width:75%;
+		padding:9.5px 0px;
+		border:0;
+		float: left;
+		-webkit-appearance:none;
+		-moz-appearance:none;
+
+		@include media ($tablet){
+			padding:12.5px;
+		}
+		@include media ($mobile){
+			padding:15.5px 60px;
+		}
+	}
+	#searchsubmit {
+		color:white;
+		float: left;
+		background:$blue;
+		border:0;
+		width:25%;
+		@include media ($mobile){
+			margin-left: -5px;
+			padding:15.5px 20px;
+		}
+	}
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+.search-contain {
+	&:hover {
+		background:$navy;
+	}
+}
